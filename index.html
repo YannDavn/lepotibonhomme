@@ -2,6 +2,13 @@
 <html>
 
 <head>
+    <!--
+         Sur une idée originale (je crois ?) de Wankil Studio
+         https://www.youtube.com/MiniprodFR évidemment
+
+         Fait avec ❤ par Yann Davin
+         https://www.yanndavin.fr
+    -->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>OUI PATRICK</title>
@@ -11,15 +18,38 @@
 </head>
 
 <body>
+    <!-- Clic utilisateur pour trigger la lecture du mp3 -->
     <div id="chromepls">
         <span>Click to patoche your life</span>
     </div>
+
+    <!-- Le poti mp3 -->
     <audio id="player" controls autoplay loop>
         <source src="allezmusique.mp3" type="audio/mp3">
     </audio>
-    <div id="rainbow"></div>
-    <div id="patoche">
-        <img src="./patoche.jpeg" />
+
+    <div id="content">
+        <!-- Au second plan, notre bg -->
+        <div id="patoche">
+            <img src="./patoche.jpeg" />
+            <!-- Au premier plan, l'arc-en-ciel qui tourne -->
+            <div id="rainbow"></div>
+        </div>
+        <div id="mentions">
+            <span>Mentions légales</span>
+        </div>
+    </div>
+
+
+    <div id="credits" class="hidden">
+        <h1>Crédits</h1>
+        <h2>Musique</h2>
+        <span>Patrick Sébastien - Le petit bonhomme en mousse</span>
+        <h2>Hébergement</h2>
+        <span>Le site <a href="https://www.lepetitbonhommeenmouss.eu/">lepetitbonhommeenmouss.eu</a> est hébergé chez OVH</span>
+        <span>2 rue Kellermann</span>
+        <span>59100 Roubaix</span>
+        <span>France</span>
     </div>
 </body>
 
